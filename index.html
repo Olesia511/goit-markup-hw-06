@@ -592,7 +592,7 @@
 
         <form class="modal-form">
           <div class="label-wrap">
-            <label for="user-name" class="modal-label"> Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="input-wrap">
               <input
                 class="modal-input"
@@ -637,7 +637,7 @@
           </div>
 
           <div class="textarea-wrap">
-            <label for="user-comment" class="modal-label"> Comment</label>
+            <label class="modal-label" for="user-comment"> Comment</label>
             <textarea
               class="comment-wrap"
               name="user-comment"
@@ -656,17 +656,14 @@
               checked
               id="user-privacy"
             />
-            <label class="checkbox-label" for="user-privacy"
-              >I accept the terms and conditions of the
-              <a class="checkbox-link" href="">Privacy Policy</a>
+            <label class="checkbox-label" for="user-privacy">
               <span class="checkbox-span">
                 <svg class="accept-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
-                </svg>
-              </span>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="checkbox-link" href="">Privacy Policy</a>
             </label>
-
-            <button class="accept-btn" type="button"></button>
           </div>
 
           <button class="send-btn" type="submit">Send</button>

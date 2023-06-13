@@ -839,6 +839,7 @@ img {
 
 .modal-title {
   margin-bottom: 16px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -846,6 +847,10 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--color-text-h);
+}
+
+.label-wrap {
+  margin-bottom: 8px;
 }
 
 .modal-label {
@@ -860,10 +865,6 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--icon-company);
-}
-
-.label-wrap {
-  margin-bottom: 8px;
 }
 
 .input-wrap {
@@ -906,10 +907,6 @@ img {
   margin-bottom: 16px;
 }
 
-.comment-wrap:is(:hover, :focus) {
-  border-color: var(--color-text-button);
-}
-
 .comment-wrap {
   transition: border-color var(--time) var(--timing-function);
 
@@ -934,13 +931,15 @@ img {
   color: var(--modal-text);
 }
 
+.comment-wrap:is(:hover, :focus) {
+  border-color: var(--color-text-button);
+}
+
 .checkbox-wrap {
   margin-bottom: 24px;
 }
 
 .checkbox-label {
-  margin-left: 24px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -957,6 +956,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
 
@@ -966,8 +966,9 @@ img {
   color: var(--color-text-button);
 }
 
-.checkbox-input:checked + .checkbox-label {
+.checkbox-input:checked + .checkbox-label > .checkbox-span {
   border-color: var(--color-text-button);
+  background-color: var(--color-text-button);
   border: none;
   fill: var(--color-btn);
 }
@@ -975,27 +976,6 @@ img {
 .checkbox-link {
   color: var(--color-text-button);
 }
-
-/* .accept-btn {
-  position: absolute;
-  top: 0px;
-
-  transition: border-color var(--time) var(--timing-function),
-    background-color var(--time) var(--timing-function),
-    fill var(--time) var(--timing-function);
-
-  width: 16px;
-  height: 16px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: transparent;
-  border: 1px solid var(--modal-text);
-  border-radius: 2px;
-  fill: var(--color-text-hero);
-} */
 
 .send-btn {
   transition: background-color var(--time) var(--timing-function);
