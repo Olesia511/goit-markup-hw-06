@@ -961,8 +961,7 @@ img {
   height: 16px;
 
   fill: transparent;
-
-  border: 1px solid var(--modal-text);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   color: var(--color-text-button);
 }
