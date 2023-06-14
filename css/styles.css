@@ -948,6 +948,12 @@ img {
   color: var(--icon-company);
 }
 
+.checkbox-input:checked + .checkbox-label > .checkbox-span {
+  background-color: var(--color-focus-btn);
+  border: none;
+  fill: var(--color-btn);
+}
+
 .checkbox-span {
   transition: border var(--time) var(--timing-function),
     background-color var(--time) var(--timing-function),
@@ -960,16 +966,11 @@ img {
   width: 16px;
   height: 16px;
 
-  fill: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  /* color: var(--color-text-button); */
-}
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
 
-.checkbox-input:checked + .checkbox-label > .checkbox-span {
-  background-color: var(--color-focus-btn);
-  border: none;
-  fill: var(--color-btn);
+  /* color: var(--color-text-button); */
 }
 
 .checkbox-link {
