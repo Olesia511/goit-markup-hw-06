@@ -963,11 +963,10 @@ img {
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  color: var(--color-text-button);
+  /* color: var(--color-text-button); */
 }
 
 .checkbox-input:checked + .checkbox-label > .checkbox-span {
-  border-color: var(--color-text-button);
   background-color: var(--color-focus-btn);
   border: none;
   fill: var(--color-btn);
