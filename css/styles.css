@@ -890,7 +890,7 @@ img {
   position: absolute;
   left: 16px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - 2px));
 
   transition: fill var(--time) var(--timing-function);
 }
@@ -969,8 +969,6 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
-
-  /* color: var(--color-text-button); */
 }
 
 .checkbox-link {
